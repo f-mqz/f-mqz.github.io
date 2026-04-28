@@ -360,7 +360,7 @@ function drawTitle() {
     ctx.fillStyle=C.WHITE; ctx.fillText('Appuie pour jouer', W/2, sy(355));
   }
 
-  const tips=['Glisse le doigt pour bouger','Le tir est automatique !','Évite les ennemis et leurs tirs','créateurs : Florian Marquez ];
+  const tips=['créé par :','Florian'];
   ctx.font=`${sc(18)}px monospace`; ctx.fillStyle=C.GRAY;
   tips.forEach((t,i)=>ctx.fillText(t, W/2, sy(450+i*44)));
   ctx.textAlign='left';
