@@ -234,7 +234,7 @@ class Player {
     this.speed = S*6;
     this.hp = 15; this.maxHp = 15;
     this.shootCd = 0;
-    this.invincible = 1000;
+    this.invincible = 0;
     this.touchId = null; this.touchPrev = null;
   }
   get rect() { return {x:this.x-this.w/2, y:this.y-this.h/2, w:this.w, h:this.h}; }
