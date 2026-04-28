@@ -182,7 +182,7 @@ class Bullet {
 // ── Enemy class ──────────────────────────────────────────────
 const ENEMY_KINDS = [
   {hp:1, speed:1.8, score:10, shootCd:140},
-  {hp:1, speed:3.2, score:20, shootCd:100},
+  {hp:2, speed:3.2, score:20, shootCd:100},
   {hp:3, speed:1.0, score:50, shootCd:70},
 ];
 class Enemy {
@@ -234,7 +234,7 @@ class Player {
     this.speed = S*6;
     this.hp = 15; this.maxHp = 15;
     this.shootCd = 0;
-    this.invincible = 0;
+    this.invincible = 1000;
     this.touchId = null; this.touchPrev = null;
   }
   get rect() { return {x:this.x-this.w/2, y:this.y-this.h/2, w:this.w, h:this.h}; }
